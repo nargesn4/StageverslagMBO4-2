@@ -165,11 +165,11 @@ nav a {
     top: -0.75rem;
     border-radius: 3px;
 }
-@media (min-width: 640px) {
+@media (min-width: 48em) {
     .blog-card {
         display:inline-block;
         flex-direction: row;
-        max-width: 800px;
+        max-width: 49%;
         vertical-align:top;
     }
     .blog-card .meta {
