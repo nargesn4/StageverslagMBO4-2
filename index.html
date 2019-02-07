@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="overlay" id="myNav">
+    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="inleiding.html">Inleiding</a>
+        <a href="organisation.html">Organisatie</a>
+        <a href="werkzaamheden.html">Werkzaamheden</a>
+        <a href="evaluatie.html">Evaluatie</a>
+        <a href="evaluatie.html">Bijlagen</a>
+    </div>
+</div>
+<article class="card">
+
+    <aside class="card__image-container">
+        <span id="menu-button" onclick="openNav()">&#9776;</span>
+        <img class="card__image" src="images/image-1.jpg"  alt="laptop">
+    </aside>
+
+    <section class="card__contents">
+
+        <header class="card__header">
+            <h1 class="card__title">StageVerslag</h1>
+            <h2 class="card__title">Stage bij Superfluid B.V.</h2>
+        </header>
+
+        <section class="card__body">
+            <h4>Voorbereid door:</h4>
+            <p>Narges Jafari <br>
+                Wold 1939<br> 8225AS<br> Lelystad<br>nargesjafarie@gmail.com<br>Tel-number: 068-4552083<br>Studentnr: 2001122<br>School:
+                MBO College Almere<br>
+                Opleiding: Applicatieontwikkelaar<br>BPV-begeleider: Dhr. Piet de Vries<br>
+                E-mail: pdevries@roc-dev.com<br>Praktijkbegeleider: dhr. Hofker<br>
+                E-mail: herbrand.hofker@gmail.com<br>Telefoon: 0320-430722<br>
+                Stageperiode: 1e jaar, periode 2<br>Startdatum: 15 oktober 2018<br>
+                Einddatum: 31 januari 2019
+            </p>
+        </section>
+
+        <footer class="card__footer">
+            <div class="adobe-download-button-container">
+                <button class="adobe-pdf-download">
+                    <table>
+                        <tr>
+                            <td><img src="http://www.clker.com/cliparts/b/2/c/b/13534493561426065224Adobe%20Icon.svg.med.png" alt="laptop"></td>
+                            <td><p><a href="https://docdro.id/BrWhMVY">download pdf</a></p></td>
+                        </tr>
+                    </table>
+                </button>
+            </div>
+        </footer>
+    </section>
+
+</article>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+</body>
+</html>

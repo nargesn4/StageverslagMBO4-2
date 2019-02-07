@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluatie</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="inleiding.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="top-container">
+    <h1>Evaluatie</h1>
+</div>
+<div class="header" id="myHeader">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="inleiding.html">Inleiding</a>
+        <a href="organisation.html">Organisatie</a>
+        <a href="werkzaamheden.html">Werkzaamheden</a>
+        <a href="evaluatie.html">Bijlagen</a>
+    </nav>
+</div>
+<main class="wrapper">
+    <div class="blog-card ">
+        <div class="meta">
+            <div class="photo"
+                 style="background-image: url(images/image-4.jpg)">
+            </div>
+        </div>
+        <div class="description">
+            <h1>Mijn functioneren</h1>
+            <h2>Een kritische beschouwing van mijn functioneren</h2>
+            <p> Deze stage is me over het algemeen goed bevallen en heb ik als zeer leerzaam ervaren. Nu ga ik met veel
+                meer kennis en een verbeterde instelling terug naar school. </p>
+            <p class="read-more">
+                <a href="evaluatieCompleet.html">Read More</a>
+            </p>
+        </div>
+    </div>
+    <div class="blog-card alt">
+        <div class="meta">
+            <div class="photo"
+                 style="background-image: url(images/image-1.jpg)"></div>
+        </div>
+        <div class="description">
+            <h1>Bereikte doelen</h1>
+            <h2>Welke doelen heb ik bereikt?</h2>
+            <p>Mijn belangrijkste leerdoel was zoveel mogelijk kennis te maken en te  werken met verschillende
+                programma's en ik denk dat ik mijn doel heb bereikt. </p>
+            <p class="read-more">
+                <a href="evaluatieCompleet.html#breikteDoelen">Read More</a>
+            </p>
+        </div>
+    </div>
+    <div class="blog-card ">
+        <div class="meta">
+            <div class="photo"
+                 style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+        </div>
+        <div class="description">
+            <h1>Vorige kennis</h1>
+            <h2>Kennis en vaardigheden uit mijn studie die ik hebt kunnen benutten</h2>
+            <p>Tijdens mijn opleiding op school heb ik met de intellij IDEA en git gewerkt en ik heb ook css, html en
+                java geleerd. Ik was in staat om die vaardigheden te gebruiken tijdens mijn stage.</p>
+            <p class="read-more">
+                <a href="evaluatieCompleet.html#vorigkennis">Read More</a>
+            </p>
+        </div>
+    </div>
+    <div class="blog-card alt">
+        <div class="meta">
+            <div class="photo"
+                 style="background-image: url(images/image-2.jpg)"></div>
+        </div>
+        <div class="description">
+            <h1>Nieuwe kennis</h1>
+            <h2>Nieuwe kennis en vaardigheden die ik heb opgedaan</h2>
+            <p>Tijdens deze stage leerde ik de volgende dingen:
+                Scrum/Jira, Principles of Scrum, Maven commands, Pom's, Maven repositories, Maven Projectstructuur,
+                Visual Studio Code, </p>
+            <p class="read-more">
+                <a href="evaluatieCompleet.html#nieuweKennis">Read More</a>
+            </p>
+        </div>
+    </div>
+</main>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = inleiding.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            inleiding.classList.add("sticky");
+        } else {
+            inleiding.classList.remove("sticky");
+        }
+    }
+</script>
+
+</body>
+</html>

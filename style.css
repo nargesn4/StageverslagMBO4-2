@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 300;
+    color: #332F21;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    padding: 2rem;
+
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('images/image-1.jpg');
+    background-size: cover;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.3333;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    min-height: 75vh;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+#menu-button{
+    float:right;
+    color: #de4533;
+    font-size:30px;
+    cursor:pointer;
+    background: #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    z-index: 101;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #de4533;
+}
+.card__image-container {
+    max-height: 15rem;
+
+    background-image: url('images/image-2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.card__image {
+    width: 500px;
+    opacity: 0;
+    pointer-events: none;
+}
+.card__contents {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.card__header,
+.card__footer {
+    flex: 0 0 auto;
+}
+.adobe-download-button-container
+{
+    float: right;
+    text-align:center;
+}
+.adobe-pdf-download
+{
+    border:2px solid #de4533;
+    background:transparent;
+    color: #de4533;
+    text-transform:uppercase;
+    font-size:0.8em;
+    padding:0px 20px 0px 20px;
+    transition: background 0.5s,color 0.5s;
+}
+.adobe-pdf-download a
+{
+    text-decoration:none;
+    color: #de4533;
+    transition: background 0.5s,color 0.5s;
+    font-family:arial;
+    font-weight:bold;
+}
+.adobe-pdf-download a:hover
+{
+    color:white;
+    transition: background 0.5s,color 0.5s;
+}
+.adobe-pdf-download:hover a
+{
+    color:white;
+    transition: background 0.5s,color 0.5s;
+}
+.adobe-pdf-download:hover
+{
+    background:#de4533;
+    color:white;
+    transition: background 0.5s,color 0.5s;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.adobe-pdf-download img
+{
+    margin:0px 10px 0px 0px;
+    padding: 0px;
+    height: 20px;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+@media only screen and (min-width: 53rem) {
+    .card {
+        flex-direction: row;
+        min-height: 60vh;
+    }
+
+    .card__image-container {
+        flex: 0 1 45%;
+        max-height: inherit;
+    }
+
+    .card__contents {
+        flex: 1 1 55%;
+        padding: 3rem;
+    }
+    #menu-button{ float: left}
+
+}
+

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>organisatie-stageverslag</title>
+
+    <link href="inleiding.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        p {
+            margin: 30px;
+        }
+
+        body, li, dl, p {
+            font-size: 1.2em;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .description {
+            margin: 20px
+        }
+    </style>
+</head>
+<body>
+<div class="header" id="myHeader">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="organisation.html">Back</a>
+    </nav>
+</div>
+<div class="description">
+    <h1>Het BPV-bedrijf</h1>
+    <p>kafka.academy is partner in europa van confluent en een onderdeel van Superfluid B.V. gevestigd in Lelystad. Het
+        is
+        een kleine bedrijf die specifieke cursussen geeft over kafka en de nieuwste ontwikkeling in ICT en streaming
+        applications.</p>
+    <h2>Doelen</h2>
+    <p>Er is een enorm tekort aan softwareontwikkelaars, daarom voelen ze zich verplicht het initiatief te nemen om
+        regulier ICT-onderwijs te helpen een goede verbinding met de markt te krijgen.</p>
+    <h3>uitganspunt hierbij is:</h3>
+    <p>De training technisch beperken tot enkele goed gekozen kernpunten en zorg dat er een concurrerende mix is van een
+        aantal super moderne, degelijke tools. De training moet leiden tot experts op het gebied van
+        stroomprogrammering,
+        blockchain, moblie-webapps, de ontwikkelingen van de komende 10 jaar</p>
+    <h3>Waarom dit initiatief?</h3>
+    <p>Op basis van jarenlange ervaring in ICT en de recente ontwikkelingen bij Apache Kafka zijn ze van mening dat
+        ICT-educatie kan worden heroverwogen en aangescherpt. Met betrekking tot projectstructuur, ontwerpmethodologie,
+        testmethodologie en softwareontwikkeling is een uitzonderlijke nieuwe mix mogelijk in 2018. Ze hebben de
+        samenstelling
+        van de technieken die hieronder worden bedacht, samengevat. Directe training zonder omwegen van
+        softwarespecialisten
+        voor de markt</p>
+
+    <h3>Waarom Apache Kafka?</h3>
+    <p>De huidige ICT is voornamelijk gebaseerd op het relationele model, maar:</p>
+    <ul>
+        <li>werkt niet met een grote hoeveelheid gegevens</li>
+        <li>het plaatsen van complexe datastructuren in relationele databases (soms> 1000 tabellen) is praktisch
+            onmogelijk
+        </li>
+        <li>In ieder geval: in de RDBMS-transactielogica zullen er altijd zwakke punten zijn (de zogenaamde
+            Heisenbugs)
+        </li>
+        <li> Al in 1985 werd gewaarschuwd voor deze problemen.</li>
+    </ul>
+    <p>Apache Kafka 2018 loste deze problemen op. In de periode 2010-2018 heeft Confluent zich enorm ingespannen en alle
+        bovengenoemde problemen opgelost en een zeer professioneel en consistent pakket afgeleverd.</p>
+    <h3>Geschiedenis</h3>
+    <dl>
+        <dt>Voor 1985</dt>
+        <dd>IT was gebaseerd op allerlei soorten databases. De gegevens waren via allerlei verwijzingen (pointers) met
+            elkaar verbonden.
+        </dd>
+        <dt>1985</dt>
+        <dd>Toen kwam de golf van de relationele database. Alle oude structuren werden "technische schuld" en alles
+            moest
+            relationeel zijn.
+        </dd>
+        <dt>2010</dt>
+        <dd>Er waren enkele scheuren in het relationele database-geweld, om verschillende redenen. Matige prestaties
+            wanneer
+            Big data in het spel kwam: NoSQL, MongoDB, Cassandra ontstond, samen met gedistribueerde systemen zoals
+            Hadoop HDFS.
+            Functioneel te complex: Evenement Sourcing geënsceneerd hier en daar, samen met CQRS om het
+            fundamenteel anders te doen. En heel belangrijk: Streamlogica werd ook geïmplementeerd in verschillende
+        </dd>
+        <dt>2018
+        <dd>Apache Kafka wordt volwassen. Gebouwd door LinkedIn techneuten en open source gemaakt in 2011 en aanvaard
+            als volledig Apache-product in 2012. In november 2014 besloten de LinkedIn ex-techies om commerciële steun
+            te verlenen aan Apache Kafka en het bedrijf Confluent te starten. In Apache Kafka komen samen:
+        </dd>
+        <ul>
+            <li>De stroomlogica: Kafka was van nature een op stroom gebaseerd hulpmiddel die werd uitgebreid met het
+                relationele
+                model via de implementaties Ktable en Kstream en KSQL (Confluent)
+            </li>
+            <li>Hoge prestaties en schaalbaarheid van NoSQL-databases en Hadoop</li>
+            <li>De stroomlogica Een nieuwe basis voor Event Sourcing, CQRS, en maakt Streaming-applicaties
+                mogelijk
+            </li>
+            <li>CRUD had zijn waarde maar lijkt zijn beperkingen te hebben, Kafka Streams doorbreekt deze
+                beperkingen met
+                streaming-tabellen en streaming-SQL
+            </li>
+
+        </ul>
+        </dt>
+    </dl>
+    <h2 id="diensten">Diensten</h2>
+    <img src="images/website-superfluid.jpg" alt="website van superfluid B.V" style="float: left; margin-right: 30px">
+    <p>ze bieden twee soorten services, afhankelijk van je vaardigheden als je een beginner of professional bent.
+        bijvorbeeld:</p>
+    <ul>
+        <li>Het geven van specifieke cursussen</li>
+        <li>Assistentie bij het samenstellen van klantcurriculum</li>
+        <li>Het organiseren en assisteren bij co-makerships</li>
+        <li>Het selecteren van de beste online cursussen</li>
+    </ul>
+    <h3>dienstverlening voor bedrijven</h3>
+    <ul>
+        <li>Kafka System Integration: ze bieden ondersteuning bij de integratie van een huidige systemen op een
+            gecontroleerde
+            manier voor een Kafka-bedrijf Centraal Zenuwstelsel.
+        </li>
+        <li>Het maken van "Proof of concept's": klanten ondersteunen bij het leveren van een proof of concept. Naar hun
+            mening
+            de beste manier om een nieuwe implementatie te starten.
+        </li>
+        <li>Kafka Database Administration: ze helpen de klanten bij het structureren van de Kafka-systeem en
+            specificeren
+            standaardbeheerprocedures.
+        </li>
+        <li>Web Applicaties op een Kafka Streams: ze helpen bij het integreren van een webtoepassingen met Kafka
+            Streams,
+            inclusief standaardcomponenten van Angular 6+.
+        </li>
+        <li>Monitoring van een Kafka Environment: De Kafka omgeving wordt het zenuwstelsel van het bedrijf. Zij helpen
+            het
+            bedrijf deze belangrijke omgeving te beheren door goede monitoring op te zetten.
+        </li>
+        <li>Deployen van een nieuwe Kafka Application, of updaten van een bestaande Kafka Omgeving: deployen op een
+            Kafka
+            omgeving is iets anders dan wat gebruikelijk zou kunnen zijn in een bestaande omgeving. Hier delen ze hun
+            ervaring
+            op dit gebied met de klant.
+        </li>
+    </ul>
+    <h2 id="producten">Producten</h2>
+    <h3>selectie van cursussen</h3>
+    <p>Voor de meeste cursussen zoeken ze de beste online cursus uit die op dat moment beschikbaar is. Indien nodig
+        vullen
+        ze het met eigen materiaal aan. Zij menen dat deze selectie de beste is voor software developers in opleiding,
+        voor
+        de komende 10 jaar.</p>
+    <table>
+        <tr>
+            <th>new developers</th>
+            <th>Backoffice developers</th>
+            <th>front office developers</th>
+            <th>all developers</th>
+            <th>project leaders</th>
+            <th>system administrators</th>
+        </tr>
+        <tr>
+            <td>Java 9+</td>
+            <td>Java EE 8+</td>
+            <td>Angular 6+</td>
+            <td>Git en Maven</td>
+            <td>Java EE 8+</td>
+            <td>Angular 6+</td>
+        </tr>
+        <tr>
+            <td> Maven Projectstructuur</td>
+            <td>JPA</td>
+            <td>Visual Studio Code</td>
+            <td>Maven commands</td>
+            <td>Scrum/Jira</td>
+            <td> Docker</td>
+        </tr>
+        <tr>
+            <td>IDE tools</td>
+            <td>CDI injection</td>
+            <td>Typescript</td>
+            <td>Pom's</td>
+            <td>Principles of Scrum</td>
+            <td>Basic Linux</td>
+        </tr>
+        <tr>
+            <td>Java core</td>
+            <td>Simple webservices</td>
+            <td>Angular CLI</td>
+            <td>Maven repositories</td>
+            <td>JIRA/Gitlab</td>
+            <td>Docker Compose</td>
+        </tr>
+        <tr>
+            <td>Java streams</td>
+            <td>REST services</td>
+            <td>Angular componenten</td>
+            <td>Git en git clients</td>
+            <td>Java EE 8+</td>
+            <td>Open shift</td>
+        </tr>
+        <tr>
+            <td>Unit tests</td>
+            <td>JSON</td>
+            <td>JSON, HTTP Client</td>
+            <td>GitHub/bitbucket</td>
+            <td>Increments</td>
+            <td>Kubernetes</td>
+        </tr>
+    </table>
+
+
+    <h3>Kafka Workshops</h3>
+
+    <p>Ze denken dat workshops de beste manier is om Kafka te ontdekken. Stukje theorie en dan de stof zelf, met wat
+        begeleiding, in de praktijk gebracht. Alle cursussen zijn gestructureerd met een beetje theorie en veel oefenen.
+        Ze gebruiken Docker en Confluent CLI, wat betekent dat ze snel veel kunnen doen.</p>
+    <table>
+        <tr>
+            <th>Kafka Introduction in a helicopter view</th>
+            <td>Een grondige inleiding tot alle aspecten van Apache Kafka.
+                <strong>Beschrijving:</strong> In deze cursus zullen klanten alle aspecten van Apache Kafka in
+                helikopterview bekijken. Met behulp van verschillende vooraf geïnstalleerde Docker-afbeeldingen van
+                Kafka-onderdelen, zullen klanten de verschillende mogelijkheden van Kafka zelf ervaren in de praktijk
+                door middel van kleine opdrachten.<strong>Vakken:</strong> Geschiedenis van Apache Kafke, Kafka versus
+                alternatieven, Zookeeper / Broker, Kafka Connect source, sink, Kafka Producer / Kafka Consumer, Kafka
+                Streams, KSql, KStreams, Security, consistentie, Intro in CQRS-gebaseerde streaming-applications
+            </td>
+        </tr>
+        <tr>
+            <th>Kafka Connect, sources and sinks</th>
+            <td><strong>Beschrijving:</strong> Hier leren de klanten hoe externe informatiesystemen, zoals de source of
+                sink, aan te sluiten op Apache Kafka. In een ideale situatie verzenden de klanten gebeurtenissen (feiten
+                / berichten) rechtstreeks naar Kafka, maar zolang dat niet het geval is, moeten ze bestaande
+                informatiesystemen koppelen en de gegevens regelmatig of continu van deze "source" naar Kafka sturen.
+                Na verwerking door Kafka's streamingtoepassingen kunnen de gegevens worden teruggestuurd naar een
+                "sink",
+                een ander extern informatiesysteem in het bedrijfsnetwerk
+                <strong>Vakken:</strong> Kafka Connect, Source Connectors, Sink Connectors, Connectors with databases,
+                Connecting message queues
+            </td>
+        </tr>
+        <tr>
+            <th>Kafka Producers and Consumers advanced</th>
+            <td><strong>Beschrijving:</strong>Standaardiseren van Producers en Consumers, aandacht voor consistentie,
+                robuustheid en compactheid
+                <strong>Vakken:</strong> Event types (hierarchy), Advanced (De)Serialization, Read and write
+                consistency,
+                Avro, Confluent Schema's
+            </td>
+        </tr>
+        <tr>
+            <th>Kafka Streams programming</th>
+            <td><strong>Beschrijving:</strong> Kafka Stream applicaties pakken events op, doen enige bewerkingen , en
+                zetten 1 of meer events trug in de stream<strong>Vakken:</strong> Streams in het algemeen, Stream
+                programming in Kafka, Ktable, Kstream, KSql
+            </td>
+        </tr>
+    </table>
+    <h2 id="structuur">Structuur en omvang van de organisatie</h2>
+    <p>Bij Superfluid B.V. werken op dit moment 3 mensen vast, een parttimers en twee stagiair . Dat brengt het totaal
+        aantal werknemers op 6.
+        Ik ga je nu voorstellen aan alle personeelsleden:<br><br>
+
+        <strong>Herbrand Hofker</strong>
+        Hij is de directeur van het bedrijf en open voor nieuwe ontwikkelingen.<br><br>
+        <strong>Ravi Sharma</strong>
+        Ravi is een ervaren professional business unit manager. Hij werkt meestal buiten het bedrijf en Ik zag hem
+        tijdens
+        de vergaderingen. Hij heeft een sterke focus op resultaten die belangrijk zijn voor het bereiken van een
+        bedrijfsbrede strategie.<br><br>
+
+        <strong>Volodymyr Voznyuk</strong>
+        Volodymyr werkt als een frontend developer en hij heeft ook de rol van marketing- en salesmanager. Hij draagt
+        zorg
+        voor boodschap van het bedrijf bij een wijd publiek bekend te maken.<br><br>
+        <strong>Maksim Hofker en ik</strong>
+        we zijn twee stagiair bij het bedrijf
+        Plaats van de mijn afdeling
+        Ik werk op de afdeling productontwikkeling en mijn taak was om bestaande cursesen en documentatie te testen en
+        te
+        onderwerpen.
+    </p>
+    <h3>Structuur bij Superfluid B.V.</h3>
+
+    <p> communicatie binnen het bedrijf vindt plaats door middel van mail, bellen en dergelijke vormen van communicatie.
+        mail gebeurt het meest. Het voordeel van e-mail is dat u de informatie opnieuw kunt zien.
+        De bestanden worden gezamenlijk beheerd op een bitbucket account en git , dus ook als je ziek bent kunnen je
+        werkzaamheden goed worden overgenomen.
+    </p>
+</div>
+</body>
+</html>
